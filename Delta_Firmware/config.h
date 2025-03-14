@@ -73,11 +73,12 @@
 #define MM_PER_ARC_SEGMENT	8			//mm   //圆弧插值
 #define NUMBER_PER_BEZIER_SEGMENT 30	//segment
 
-#define DEFAULT_ACCELERATION 2000.0				//mm^2/s  // 默认加速度
-#define DEFAULT_VELOCITY 300.0					//mm/s  // 默认速度
+// 修改默认速度和加速
+#define DEFAULT_ACCELERATION 4000.0				//mm^2/s  // 默认加速度
+#define DEFAULT_VELOCITY 450.0					//mm/s  // 默认速度
 
-#define DEFAULT_MAX_VELOCITY 850.0			//mm/s
-#define DEFAULT_MAX_ACCELERATION 30000.0			//mm/s
+#define DEFAULT_MAX_VELOCITY 1200.0			//mm/s
+#define DEFAULT_MAX_ACCELERATION 40000.0			//mm/s
 
 #define INTERRUPT_CYCLE_MIN	170.0f    //165   // cycle（最小循环时间）
 
