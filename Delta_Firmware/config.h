@@ -66,27 +66,29 @@
 #endif // CLIP
 
 //Adaptive Multi - Axis Step - Smoothing(AMASS)
-#define SMOOTHSTEP 0
+#define SMOOTHSTEP 1
 
 //Bresenham line drawing algorithm
-#define MM_PER_LINEAR_SEGMENT	12			//mm  // 线性插值
-#define MM_PER_ARC_SEGMENT	8			//mm   //圆弧插值
+#define MM_PER_LINEAR_SEGMENT	10			//mm  // 线性插值
+#define MM_PER_ARC_SEGMENT	6			//mm   //圆弧插值
 #define NUMBER_PER_BEZIER_SEGMENT 30	//segment
 
 // 修改默认速度和加速
 #define DEFAULT_ACCELERATION 4000.0				//mm^2/s  // 默认加速度
 #define DEFAULT_VELOCITY 450.0					//mm/s  // 默认速度
+// 加速度 ≈ (10-20) × 最大速度，速度与加速度之间的关系。加速度约为速度的10~20倍。
+// 如：速度500，加速度为5000 ~ 10000 
 
 #define DEFAULT_MAX_VELOCITY 1200.0			//mm/s
 #define DEFAULT_MAX_ACCELERATION 40000.0			//mm/s
 
 #define INTERRUPT_CYCLE_MIN	170.0f    //165   // cycle（最小循环时间）
 
-#define DEFAULT_BEGIN_VELOCITY 12			//mm/s  //默认开始速度
-#define DEFAULT_END_VELOCITY 12		//mm/s
+#define DEFAULT_BEGIN_VELOCITY 30			//mm/s  //默认开始速度
+#define DEFAULT_END_VELOCITY 30		//mm/s
 
-#define DEFAULT_ENTRY_VELOCITY 12			//mm/s  //默认entry速度
-#define DEFAULT_EXIT_VELOCITY 12			//mm/s  //默认exit速度
+#define DEFAULT_ENTRY_VELOCITY 30			//mm/s  //默认entry速度
+#define DEFAULT_EXIT_VELOCITY 30			//mm/s  //默认exit速度
 
 #define DEFAULT_MOVING_HOME_SPEED 50			//deg/s //回到初始位置（home）速度
 

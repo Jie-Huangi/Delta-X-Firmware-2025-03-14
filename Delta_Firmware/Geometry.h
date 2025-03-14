@@ -76,9 +76,13 @@
 #define THETA2_HOME_POSITION -38.5      //theta_2原点角度
 #define THETA3_HOME_POSITION -38.5      //theta_3原点角度
 
-#define THETA1_STEPS_PER_2PI  16000		// 这个值感觉像是步进电机的初始脉冲	//200*16*3，16细分，200个脉冲，传动比3，9600个脉冲，电机转一周。
-#define THETA2_STEPS_PER_2PI  16000
-#define THETA3_STEPS_PER_2PI  16000
+// 200 * 8 * 5 = 8000
+
+#define THETA1_STEPS_PER_2PI  8000		// 这个值感觉像是步进电机的初始脉冲	// 
+
+// 200*16*3，16细分，200个脉冲，传动比3，9600个脉冲，电机转一周。
+#define THETA2_STEPS_PER_2PI  8000
+#define THETA3_STEPS_PER_2PI  8000
 
 // #define THETA1_STEPS_PER_2PI  9600		// 这个值感觉像是步进电机的初始脉冲	//200*16*3，16细分，200个脉冲，传动比3，9600个脉冲，电机转一周。
 // #define THETA2_STEPS_PER_2PI  9600
