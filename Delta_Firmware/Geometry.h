@@ -76,7 +76,8 @@
 #define THETA2_HOME_POSITION -38.5      //theta_2原点角度
 #define THETA3_HOME_POSITION -38.5      //theta_3原点角度
 
-// 200 * 8 * 5 = 8000
+// 200 * 8 * 5 = 8000，脉冲200一圈，细分8，传动比5，精度低
+// 200 * 16 * 5 = 16000，脉冲200一圈，细分16，传动比5，精度高
 
 #define THETA1_STEPS_PER_2PI  8000		// 这个值感觉像是步进电机的初始脉冲	// 
 
