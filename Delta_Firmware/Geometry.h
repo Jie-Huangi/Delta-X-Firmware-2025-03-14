@@ -79,11 +79,11 @@
 // 200 * 8 * 5 = 8000，脉冲200一圈，细分8，传动比5，精度低
 // 200 * 16 * 5 = 16000，脉冲200一圈，细分16，传动比5，精度高
 
-#define THETA1_STEPS_PER_2PI  8000		// 这个值感觉像是步进电机的初始脉冲	// 
+#define THETA1_STEPS_PER_2PI  16000		// 这个值感觉像是步进电机的初始脉冲	// 
 
 // 200*16*3，16细分，200个脉冲，传动比3，9600个脉冲，电机转一周。
-#define THETA2_STEPS_PER_2PI  8000
-#define THETA3_STEPS_PER_2PI  8000
+#define THETA2_STEPS_PER_2PI  16000
+#define THETA3_STEPS_PER_2PI  16000
 
 // #define THETA1_STEPS_PER_2PI  9600		// 这个值感觉像是步进电机的初始脉冲	//200*16*3，16细分，200个脉冲，传动比3，9600个脉冲，电机转一周。
 // #define THETA2_STEPS_PER_2PI  9600
